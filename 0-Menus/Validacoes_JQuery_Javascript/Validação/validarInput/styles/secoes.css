@@ -1,0 +1,58 @@
+#comidas {
+    height: 500px;
+    background-color: chocolate;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 5px;
+    margin-bottom: 4px;
+}
+
+.identificacao {
+    color: aliceblue;
+    padding-left: 10px;
+}
+
+#motos {
+    height: 500px;
+    background-color: rgb(252, 0, 0);
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 5px;
+    margin-bottom: 4px;
+}
+
+#animais {
+    height: 500px;
+    background-color: rgb(125, 247, 145);
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 5px;
+    margin-bottom: 4px;
+}
+
+#cidades {
+    height: 500px;
+    background-color: rgb(255, 169, 9);
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 5px;
+    margin-bottom: 4px;
+}
+
+#noticias {
+    height: 500px;
+    background-color: rgb(0, 212, 250);
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 5px;
+    margin-bottom: 4px;
+}
+
+#configuracoes {
+    height: 500px;
+    background-color: rgb(104, 103, 101);
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 5px;
+    margin-bottom: 4px;
+}

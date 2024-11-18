@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <title>Validação com jQuery</title>
+
+        <script language="javascript" src="jquery-1.2.6.js"></script>
+        <script language="javascript" src="js/main.js"></script>
+        
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <script language="javascript">
+
+        $(
+            function(){
+            $("#mainForm").bind("submit", validar);
+            }
+        );
+
+        /**
+        * Executa a verificação
+        */
+        function validar(e){
+
+            const habilita = true;
+
+            // determina se o form pode ser submetido ou não
+            var canSubmit = true;
+
+            // acumula as mensagens de erro
+            var messages = "<ul>";
+
+            // faz uma busca por todos elementos que especificam o atributo req=true
+            $("[req=true]").each(
+                function(){
+                    if($(this).val().length < 1){
+                        canSubmit = false;
+                        messages += "<li>" + $(this).attr("label") + " é obrigatório</li>";
+                    }
+                }
+            );
+
+            jQuery('input').each(function(){
+                alert("Input");
+
+                function(){
+                    var elemento = document.querySelector("input");
+                    console.log("entrei!");
+                    for(i=0;i<elemento.length;i++){
+                        var e = elemento[i];
+                    alert(e.value);
+                }
+            }
+
+            }); 
+
+
+            messages += "</ul>";
+
+            // verifica se vai exibir as mensagens de erro
+            if(canSubmit == false)
+                $("#divError").html(messages).css("color", "red").fadeIn(300);
+                return canSubmit;
+        }
+        </script>
+
+        <style>
+
+        p{
+        margin: 2px;
+        padding: 2px;
+        }
+
+        </style>
+
+    </head>
+
+    <body>
+        <form method="post" id="mainForm">
+        <!-- div que irá exibir as mensagens de erro -->
+        <div id="divError" style="display:none"></div>
+
+        <p>Nome</p>
+        <input type="text" name="name" label="nome do usuário" req="true"/>
+
+        <p>Sobrenome</p>
+        <input type="text" name="sobrenome" label="sobrenome do usuário" req="true"/>
+
+        <p>Observações</p>
+        <textarea name="obs" label="observações sobre o usuário" req="true"></textarea>
+
+        <br/>
+        <input type="submit" value="Enviar"/>
+        </form>
+    </body>
+</html>

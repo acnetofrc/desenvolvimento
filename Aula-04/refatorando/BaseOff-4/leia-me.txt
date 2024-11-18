@@ -1,0 +1,16 @@
+
+--------------------------
+Base 1
+--------------------------
+Neste projeto temos apenas os arquivos de configurações mínimas necessárias
+
+- dependencias
+- rota inicial do menu
+
+--------------------------
+Base 2
+--------------------------
+Neste projeto iniciamos a configuração do diretório public para fazer uso de imagens
+
+
+https://tableless.com.br/colocar-rodape-fixo-no-bottom/

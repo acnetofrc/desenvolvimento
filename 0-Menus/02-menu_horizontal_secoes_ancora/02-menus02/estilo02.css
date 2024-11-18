@@ -1,0 +1,14 @@
+#origem {
+    height: 50px;
+    margin-top: 10px;
+    color: maroon;
+    border-style: 4px solid blue;
+}
+
+.menu-sanfona li ul{
+    display:none;
+}
+.menu-sanfona li:focus ul{
+    display:block;
+}
+

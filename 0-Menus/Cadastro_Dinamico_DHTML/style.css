@@ -1,0 +1,33 @@
+
+body { 
+    margin: 0;
+}
+
+#registros { 
+    width: 400px;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    caption-side: top;
+} 
+
+table#registros td#tb-nome {
+    width: 1200px;
+
+}
+
+caption{
+    font-size: 80%;
+    padding-top: 5px;
+    text-align: left;
+}
+
+tr, td {
+    border: 1px solid black;
+    padding: 3px 10px;
+}
+
+tr {
+    background: #DDD;
+}

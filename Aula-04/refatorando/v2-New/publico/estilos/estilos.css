@@ -1,0 +1,105 @@
+/*
+- CSS é relativo ao elemento-ancestal mais próximo. 
+
+- Se for preciso usar a largura ou a altura da viewport ao invés da largura do elemento-pai? 
+    - Isso é exatamente o que as unidades vh e vw proporcionam com CSS.
+
+A medida vh é igual a 1/100 da altura da viewport. 
+
+- Então, por exemplo, se a altura do navegador é 900px, 1vh equivale a 9px e, 
+    - analogamente, se a largura da viewport é 750px, 1vw equivale a 7.5px.
+
+- Se o navegador foi ajustado para 1100px de largura e a altura 700px, 
+    1vmin seria 7px e 1vmax seria 11px. 
+    
+- Contudo, se a largura foi ajustada para 800px e a altura definida para 1080px, 
+    vmin seria igual a 8px e vmax 10.8px.
+
+*/
+body, html {
+    height: 100vh;
+    width: 100vw;
+}
+  
+xxbody {
+    margin: 1vw 1vh 1vw 1vh;
+
+}
+
+#principal {
+    background-color: darkgrey;
+    height: 72vh;
+    text-align: center;
+    border: 1px solid black;
+}
+
+header {
+    text-align: center;
+
+    background-color: aqua;
+    height: 19vh;
+    border: 1px solid black;
+}
+
+footer {
+    text-align: center;
+
+    background-color: greenyellow;
+    height: 9vh;
+    border: 1px solid black;
+
+}
+
+.imagem {
+
+    margin: 2vh;
+
+}
+
+/*
+    menu de opções
+*/
+
+.menuPrincipal ul li { 
+    display: inline; 
+    padding-left: 2vw;
+
+
+}  
+
+.menuPrincipal ul li a{ 
+
+    color: blue;
+}  
+
+.menuPrincipal ul li a:hover{ 
+    color: red;
+    font-size: 22px;
+
+}  
+
+.menuPrincipal {
+    float: center;
+    font-size: 20px;
+    padding-left: 0px;
+
+    transition: 0.2s;
+    
+}  
+
+
+.titulo {
+    text-align: center
+} 
+
+/*
+    imagens
+*/
+
+.img_menu{
+    
+    margin-top: 200px;
+    text-align: center;
+
+} 
+

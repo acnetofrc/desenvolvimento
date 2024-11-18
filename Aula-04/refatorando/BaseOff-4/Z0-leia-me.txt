@@ -1,0 +1,8 @@
+
+Neste projeto temos apenas os arquivos de configurações mínimas necessárias
+
+- dependencias
+- rota inicial do menu
+
+
+

@@ -1,0 +1,79 @@
+#corbo {
+    margin: 5 px;
+    background-color: black;
+    border-width: 1px;
+    height: 2000px;
+}
+
+#logoFatec {
+    top: 0px;
+    opacity: 1.0;
+    transition: .2s;
+    filter: alpha(opacity=50);
+}
+
+#logoFatec:hover {
+    opacity: 0.1;
+    transition: .2s;
+    filter: alpha(opacity=100);
+}
+
+.menuOpcoes ul li {
+    display: inline;
+}
+
+.menuOpcoes ul li a {
+    display: inline-block;
+    padding: 2px 10px;
+    color: gray;
+    text-decoration: none;
+    padding-left: 10px;
+
+}
+
+.menuOpcoes ul li a:hover {
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(122, 6, 6);
+    border: 2px;
+    transition: .2s;
+
+}
+
+.menuOpcoes ul {
+    font-size: 15px;
+    position: absolute;
+    top: 15px;
+    left: 300px;
+}
+
+figure {
+    top: 0px;
+}
+
+header {
+    border-color: rgb(136, 1, 1);
+    border-style: solid;
+    border-width: 1px
+}
+
+.voltarTopo{
+    position:fixed;
+    bottom: 50px;
+    right: 5px;
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+    background-color: rgba(0,0,0,0.3);
+    font: 12px;
+    padding: 20px;
+    transition: .2s;
+    background-image: url('../img/icons8-divisa-para-cima-64.png');
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.voltarTopo:hover{
+    background-color:  rgba(0,0,0,0.6);
+    transition: .2s;
+}

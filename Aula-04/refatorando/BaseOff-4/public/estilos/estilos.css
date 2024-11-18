@@ -1,0 +1,42 @@
+
+.menuPrincipal ul li { 
+    display: inline; 
+    padding-left: 22px;
+
+}  
+
+.menuPrincipal ul li a{ 
+    color: blue;
+}  
+
+.menuPrincipal ul li a:hover{ 
+    color: red;
+    font-size: 31px;
+
+}  
+
+.menuPrincipal {
+    float: left;
+    font-size: 30px;
+    padding-left: 30px;
+
+    transition: 0.2s;
+    
+}  
+
+
+.titulo {
+    text-align: center
+} 
+
+/*
+    imagens
+*/
+
+.img_menu{
+    
+    margin-top: 200px;
+    text-align: center;
+
+} 
+

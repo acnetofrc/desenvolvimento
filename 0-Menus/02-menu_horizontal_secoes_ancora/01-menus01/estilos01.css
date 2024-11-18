@@ -1,0 +1,43 @@
+#principal {
+    margin: 3px;
+}
+
+#menu {
+    background-color: rgba(0,0,0,0.3);
+}
+
+#menu::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#menu ul{
+    padding: 20px;
+    margin: 0px;
+    list-style: none;
+    text-align: right;
+}
+
+#menu ul li {
+    display: inline;
+}
+
+#menu ul li a {
+    padding: 2px 10px;
+    display: inline-block;
+/*    background-color: #EDEDED; */
+    color: #333;
+    text-decoration: none;
+}
+
+#menu ul li a:hover {
+/*    background-color: #D6D6D6; */
+    color: #6D6D6D;
+    font-weight: bold;
+    font-size: 18px;
+    color: blue;
+/*    border-bottom: 3px solid #EA0000; */
+}
+
+

@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>Validar!!</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <script language="JavaScript">
+/*            
+            function pedirVoto(){
+                if (confirm("Esta página está muito legal (como pode ser vista). Dê o seu voto!")){
+                    console.log("Entrei");
+//                window.open("http://www.oquefor.com/votar.php?idvoto=12111","","")
+                }
+            }
+*/
+            function pegaValor(){
+                var elemento = document.querySelector("input");
+                console.log("entrei!");
+                for(i=0;i<elemento.length;i++){
+                    var e = elemento[i];
+                alert(e.value);
+                }
+            }
+
+            jQuery('input[type=text]').each(function(){
+                alert("Input");
+            });
+
+            var input = document.querySelector("input");
+            input.addEventListener("change", function() {
+                if (input.files.length > 0) {
+                var file = input.files[0];
+                console.log("You chose", file.name);
+                if (file.type)
+                    console.log("It has type", file.type);
+                }
+            });
+
+        </script>
+        
+    </head>
+
+    <body onload="pegaValor()">
+        <div id="">
+            <h1>Página SuperLegal</h1>
+            <br>
+            Esta página está muito bonita. Sou o autor e posso garantir que não há muitas páginas com tanta qualidade na Internet
+            <br>
+            <br>
+
+            <hr>
+            <form id="cadastro" action="" >
+                <p>
+                    <label>Seu nome:</label>
+                    <input type="text" name="nome" class="">
+                </p>
+                <p>
+                    <label>Seu email:</label>
+                    <input type="text" name="email" class="">
+                </p>
+                <p>
+                    <label>Seu assunto:</label>
+                    <input type="text" name="assunto" maxlength="2" class="">
+                </p>
+                <p>
+                    <label>Seu comentario:</label>
+                    <input type="text" name="comentario" minlength="5" class="">
+                </p>
+                <input type="submit" value="enviar" />
+            </form>
+            
+            
+            <a href="#">Entrar</a>
+            <br>
+            <button type="button" onclick="ValidarFormulario('formTeste')">Validar</button> 
+            <button type="button" onclick="Validar(true)">Validar Input's</button>             
+            <button type="submit" name="myButton" value="foo">Click me</button>            
+
+        </div>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html> 

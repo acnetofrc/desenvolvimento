@@ -1,0 +1,11 @@
+
+/https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/table
+
+https://www.homehost.com.br/blog/criar-sites/tabela-html/
+
+https://tableless.github.io/iniciantes/manual/css/box-model.html
+
+================= HTML + json 
+
+https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Objects/JSON
+

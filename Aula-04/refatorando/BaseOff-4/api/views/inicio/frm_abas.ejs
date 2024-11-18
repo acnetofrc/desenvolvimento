@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- As 3 meta tags acima *devem* vir em primeiro lugar dentro do `head`; qualquer outro conteúdo deve vir *após* essas tags -->
+    <title><%= title %></title>
+
+
+</head>
+
+<body>
+    <header>
+        <nav class="menuCadastros">
+            <h2>Formulário com Abas</h2>
+        </nav>
+    </header>
+
+    <main class=frmCadastro>
+        <ul class="nav nav-tabs">
+            <li class="active" id="home-tab"><a data-toggle="tab" href="#pagina1">Cadastro de Alunos</a></li>
+            <li id="tab-1"><a data-toggle="tab" role='tab' href="#pagina2">Listagem de Alunos</a></li>
+            <li id="tab-2"><a data-toggle="tab" role='tab' href="#pagina3">Telefones de Alunos</a></li>
+            <li id="tab-3"><a data-toggle="tab" role='tab' href="#pagina4">e-mails de Alunos</a></li>
+            <li id="tab-4"><a data-toggle="tab" role='tab' href="#pagina5">Pesquisa de Registros</a></li>
+
+        </ul>
+        <div class="tab-content">
+            <div id="pagina1" class="tab-pane fade in active">
+                <form id='formAluno' action="/" method="post">
+<!--
+    primeira linha 
+-->
+                    <br>
+                    <div class="row">
+                        <div class="col-md-1 col-md-offset-0">
+                            <label>Código</label>
+                            <input type="text" name="alu_codigo" class="form-control" value="alu_codigo" size="5" readonly>
+                        </div>
+                    </div>
+<!--
+    segunda linha 
+-->
+                    <div class="row">
+                        <div class="form-group col-md-7 offset-md-0">
+                            <label>Nome</label>
+                            <input type="text" name="alu_nome" class="form-control" value="alu_nome" placeholder="Nome do aluno">
+                        </div>
+                    </div>
+<!--
+    terceira linha 
+-->
+                    <div class="row">
+                        <div class="form-group col-md-2 offset-md-0">
+                            <label>Dt.Nascimento</label>
+                            <input type="text" name="alu_dtnascimento" class="form-control" value="alu_dtnascimento" placeholder="Data de nascimento">
+                        </div>
+                    </div>
+<!--
+    quarta linha 
+-->
+                    <div class="row">
+                        <div class="form-group col-md-7 offset-md-0">
+                            <label>Endereço</label>
+                            <input type="text" name="alu_endereco" class="form-control" value="alu_endereco" placeholder="endereço">
+                        </div>
+                    </div>
+<!--
+    quinta linha 
+-->
+                    <div class="row">
+                        <div class="form-group col-md-4 offset-md-0">
+                            <label>Bairro</label>
+                            <input type="text" name="alu_bairro" class="form-control" value="alu_bairro" placeholder="bairro">
+                        </div>
+                    </div>
+<!--
+    sexta linha 
+-->
+                    <div class="row">
+                        <div class="form-group col-md-1 offset-md-2">
+                            <label>Apelido</label>
+                            <input type="text" name="apelido" class="form-control" value="cur_apelido" disabled>
+                        </div>
+                    </div>
+<!--
+    botões de acão
+-->
+                    <div class="row">
+                        <div class="col-md-2">
+                            <a class="btn btn-primary btn-block" href="/#">Novo Registro</a>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="submit" class="btn btn-success btn-block">Gravar Registro </button>
+                        </div>
+                        <div class="col-md-3" offset-md-1>
+                            <button type="button" class="btn btn-warning btn-block">Importar Registro </button>
+                        </div>
+                    </div>
+                    <br>
+                </form>
+                <br>
+                <br>
+                <hr>
+            </div> 
+            
+<!-- tab pagina 1 -->
+
+<!--
+    *
+    *        
+    Aba de Listagem de telefones
+    *
+    *
+-->
+
+            <div id="pagina2" class="tab-pane fade">
+                <br>
+                <form class="formRelAlunos">
+                    <fieldset>
+                        <h3>Relatórios</h3>
+                    </fieldset>
+                </form>
+            </div>
+
+<!--
+*
+*        
+    Aba de cadastro de telefones de alunos
+*
+*
+-->
+
+            <div id="pagina3" class="tab-pane fade">
+                <form id="formTelefones" action="/#" method="post">
+<!--
+    primeira linha 
+-->
+                    <br>
+                    <div id="principal">
+                        <div class="row">
+                            <div class="form-group col-md-1 offset-0">
+                                <label>Aluno</label>
+                                <input type="text" name="alu_codigo" class="form-control" value="alu_codigo" size="5" readonly>
+                            </div>
+
+                            <div class="col-md-5 col-md-offset-2">
+                                <label>Nome</label>
+                                <input type="text" name="alu_nome" class="form-control" value="alu_nome" disabled>
+                            </div>
+
+                        </div>
+                    </div>
+                    <hr id="pagina3-1">
+
+<!--
+    segunda linha 
+-->
+                    <div id="principal_dados">
+                        <div class="row">
+                            <div class="form-group col-md-1 offset-md-0">
+                                <label>Código</label>
+                                <input type="text" name="tel_codigo" class="form-control" value="tel_codigo" readonly>
+                            </div>
+                        </div>
+<!--
+    terceira linha 
+-->
+                        <div class="row">
+                            <div class="form-group col-md-1 col-md-offset-1">
+                                <label>Prefixo</label>
+                            </div>
+
+                            <div class="form-group col-md-2 col-md-offset-5">
+                                <label for="dtAlteracao">Data de Alteração</label>
+                            </div>
+                        </div>
+<!--
+    quarta linha 
+-->
+                        <div class="row">
+                            <div class="form-group col-md-1 offset-md-0">
+                                <label>DDD</label>
+                            </div>
+                            <div class="form-group col-md-2 offset-md-1">
+                                <label>Número Telefone</label>
+                            </div>
+                            <div class="form-group col-md-4 offset-md-2">
+                                <label>Identificação</label>
+                            </div>
+                        </div>
+                    </div>
+
+<!--
+    botões de acão
+-->
+                    <hr>
+                    <div class="row">
+
+                        <div class="col-md-2">
+                            <button class="btn btn-primary btn-block" type="button" onclick="novoRegistro()">Novo Registro</button>
+                        </div>
+                        
+                        <div class="col-md-3">
+                            <button type="submit" class="btn btn-success btn-block">Gravar Registro </button>
+                        </div>
+
+                    </div>
+<!--
+    Aba de Listagem de telefones de telefones
+-->
+                    <br>
+                    <fieldset>
+                        <h3>Dados Complementares</h3>
+                    </fieldset>
+                </form>
+            </div>
+            <br>
+<!--
+    Aba de pesquisa de telefones
+-->
+            <div id="pagina4" class="tab-pane fade">
+                <h3>E-mail de telefones</h3>
+            </div>
+<!--
+    Aba de pesquisa de telefones
+-->
+            <div id="pagina33" class="tab-pane fade">
+                <h3>Pesquisar telefones</h3>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h6> Copyright © 2019-1 | Programação Script - Fatec Franca </h6>
+    </footer>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

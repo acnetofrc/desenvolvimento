@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="carros.css"/>
+    <script src="carros.js"></script>
+    <script src="carros.json"></script>
+
+
+    <title>Json com JavaScript e HTML</title>
+</head>
+
+<body>
+    <div id="btnExecutar">
+        <button onclick="carregar()">Importar Json</button>
+    </div>
+
+    <legend> <h2>Registros de Pessoas Cadastrados</h2>  </legend>
+    <table>
+      <thead id="cabecalho_rel"> 
+        <tr>
+          <th> Código </th>
+          <th> Nome do Contato </th>
+          <th> Idade </th>
+          <th> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>                    
+          <th> <a class="btn btn-sucess btn-block" href="/">Novo Registro</a></th>
+        </tr>
+      </thead>
+
+      <tbody id="corpo_rel">                
+        <% for(i=0; i<pessoas; i++) {%> 
+          <tr>
+            <td id="codigo">  <%= pessoas[i].cod %> </td>
+            <td id="a-i">  <%= pessoas[i].nome %> </td>
+            <td id="titulo_livro">  <%= pessoas[i].idade %> </td>
+
+            <td> <a class="btn btn-primary btn-block" href=<%="/" + pessoas[i].cod%>>Editar </a></td> 
+            <td> <a class="btn btn-danger btn-block" href=<%="/" + pessoas[i].cod%>>Inativar </a></td> 
+
+          </tr>
+        <% } %>                 
+      </tbody>
+
+    </table>
+
+
+    <div class="container" id="carros-container">
+        <!--<div class="card">
+            <img src="img/carro1.jpg" alt="">
+            <h3>CARRO1</h3>
+        </div>   -->
+         
+             
+    </div>
+
+    
+    <!-- carregar(); -->
+    
+    
+</body>
+</html>

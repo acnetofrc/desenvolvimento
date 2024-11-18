@@ -1,0 +1,38 @@
+npm init
+
+npm install express --save
+
+npm install consign --save
+
+npm install -g nodemon
+
+npm install --save-dev nodemon
+
+npm install node-fetch
+npm install node-fetch@2
+
+npm install axios
+
+
+links api
+https://randomuser.me/api/?results=2
+
+https://api.github.com/users/github
+
+https://viacep.com.br/ws/14403720/json/     => testar na url do navegador direto
+
+https://reqres.in/api/users
+
+https://pokeapi.co/api/v2/pokemon/
+
+
+rotinas inteiras de exercícios
+
+https://crisgon.github.io/posts/Consumindo-uma-API-de-pokemon-com-Javascript/
+
+https://ricardo-reis.medium.com/fetch-api-javascript-d2f0248311f6
+
+https://www.braziljs.org/p/fetch-api-e-o-javascript?utm_source=url
+
+https://www.digitalocean.com/community/tutorials/how-to-use-the-javascript-fetch-api-to-get-data-pt
+

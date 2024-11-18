@@ -1,0 +1,30 @@
+
+[{
+        nome: 'Aaa',
+        sobrenome: 'Aaa',
+        telefone: '(11) 1111-2222',
+        cidade: 'Blabla'
+    }, {
+        nome: 'Bbb',
+        sobrenome: 'Bbb',
+        telefone: '(11) 1111-2222',
+        cidade: 'Blabla'
+    }, {
+        nome: 'Ccc',
+        sobrenome: 'Ccc',
+        telefone: '(11) 1111-2222',
+        cidade: 'Blabla'
+    }, {
+        nome: 'Ddd',
+        sobrenome: 'Ddd',
+        telefone: '(11) 1111-2222',
+        cidade: 'Blabla'
+    }],
+    headers:[
+        {key: 'nome', name: 'Nome', style: 'width:40%'},
+        {key: 'sobrenome', name: 'Sobrenome', style: 'width:30%'},
+        {key: 'telefone', name: 'Telefone', style: 'width:15%'},
+        {key: 'cidade', name: 'Cidade', style: 'width:15%'}
+    ]
+}]
+;

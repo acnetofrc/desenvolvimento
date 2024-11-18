@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function myFunction() {
+            /*            
+                        $(document).ready(function () {
+            
+                            $("input").blur(function () {
+                                if ($(this).val() == "") {
+                                    $(this).css({ "border": "1px solid #F00", "padding": "2px" });
+                                    $(this).focus();
+                                }
+                            });
+            
+            
+                        });
+            */
+
+//            console.log("Entrei!" + cont);
+
+            alert("You pressed a key inside the input field");
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <form id="form" name="form" method="post" onkeypress="myFunction()">
+
+        <p>A function is triggered when the user is pressing a key in the input field.</p>
+
+        <input type="text">
+        <!--
+        <span style="display:inline-table; width:170px;">1-Sobrenome:</span>
+        <input type="text" id="sobrenome" value="" size="60" tag=1>
+        <br /><br />
+-->
+
+    </form>
+</body>
+
+</html>

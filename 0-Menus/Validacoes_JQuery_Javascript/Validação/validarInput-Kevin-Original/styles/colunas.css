@@ -1,0 +1,23 @@
+.col-md-4 {
+    background-color: rgb(96, 96, 231);
+    border: 1px solid black;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.col-md-5 {
+    background-color: rgb(109, 233, 105);
+    border: 1px solid black;
+}
+.col-md-3 {
+    background-color: rgb(255, 0, 0);
+    border: 1px solid black;
+}
+.row{
+    color: aliceblue;
+    text-align:justify;
+}
+img{
+    width: 100%;
+    height: auto;
+}

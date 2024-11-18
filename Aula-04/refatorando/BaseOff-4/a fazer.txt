@@ -1,0 +1,12 @@
+
+	*criar pasta imagens
+
+	*referenciar nas páginas as imagens de referencia
+
+	*colocar configurações css num arquivo externo
+
+validar a página no W3C
+
+	*aumentar fonte do menu de opções de todos os menus
+
+

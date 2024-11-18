@@ -1,0 +1,42 @@
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+
+#principal {
+    background-color:aliceblue;
+    height: 15vh;
+}
+
+#menu {
+    background-color: rgba(0,0,0,0.3);
+}
+
+#menu::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#menu ul {
+    padding: 1vh;
+    margin: 0px;
+    list-style: none;
+    text-align: right;
+}
+#menu ul li {
+    display: inline;
+}
+#menu ul li a {
+    padding: 0.2vw 5vh;
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+}
+#menu ul li a:hover {
+    color: #6d6d6d;
+    font-weight: bold;
+    font-size: 18px;
+    color: blue;
+
+}

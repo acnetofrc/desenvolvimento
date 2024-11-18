@@ -1,0 +1,58 @@
+#estados {
+    height: 40vh;
+    background-color: gold;
+    border: solid 1px black;
+}
+
+#motos {
+    height: 50vh;
+    background-color:aqua;
+    border: solid 1px black;
+
+}
+
+#animais {
+    height: 30vh;
+    background-color:chartreuse;
+    border: solid 1px black;
+}
+
+#clubes {
+    height: 20vh;
+    background-color:burlywood;
+    border: solid 1px black;
+}
+
+#noticias {
+    height: 25vh;
+    background-color:brown;
+    border: solid 1px black;
+}
+
+#contatos {
+    height: 10vh;
+    background-color:chartreuse;
+    border: solid 1px black;
+}
+
+#animais {
+    height: 60vh;
+    background-color:darkgrey;
+    border: solid 1px black;
+}
+
+.irNoticias {
+    position: fixed;
+    bottom: 400px;
+    right: 5px;
+    text-decoration: none;
+    color:white;
+    background-color: blue;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.irNoticias:hover {
+    background-color:white;
+}
+

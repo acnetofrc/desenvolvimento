@@ -1,0 +1,74 @@
+<html>
+
+<head>
+	<title>Criando linhas dinamicamente em tabelas</title>
+</head>
+
+<body>
+	<table id='tabela' border='2' width='100%'></table>
+	
+	<script LANGUAGE="JavaScript">
+		var config = {
+			values: [{
+				nome: 'Aaa',
+				sobrenome: 'Aaa',
+				telefone: '(11) 1111-2222',
+				cidade: 'Blabla'
+			}, {
+				nome: 'Bbb',
+				sobrenome: 'Bbb',
+				telefone: '(11) 1111-2222',
+				cidade: 'Blabla'
+			}, {
+				nome: 'Ccc',
+				sobrenome: 'Ccc',
+				telefone: '(11) 1111-2222',
+				cidade: 'Blabla'
+			}, {
+				nome: 'Ddd',
+				sobrenome: 'Ddd',
+				telefone: '(11) 1111-2222',
+				cidade: 'Blabla'
+			}],
+			headers:[
+				{key: 'nome', name: 'Nome', style: 'width:40%'},
+				{key: 'sobrenome', name: 'Sobrenome', style: 'width:30%'},
+				{key: 'telefone', name: 'Telefone', style: 'width:15%'},
+				{key: 'cidade', name: 'Cidade', style: 'width:15%'}
+			]
+		};
+		
+		function populateTable(c, config) {
+			var values = config.values;
+			var headers = config.headers;
+			
+			/* Limpa a tabela para adicionar novas informações */
+			while(c.rows.length - 1 > 0) {
+				c.deleteRow(1);
+			}
+			
+			/* Define variáveis para criação das linhas e colunas */
+			var row; var col;
+			
+			// Linhas
+			for(var i = 0; i < values.length; i++) {
+				var lastRow = c.rows.length;
+				var iteration = lastRow;
+				row = c.insertRow(lastRow);
+				
+				// Colunas
+				for(var j = 0; j < headers.length; j++) {
+					col = row.insertCell(j);
+					col.style = headers[j].style;
+					col.appendChild(document.createTextNode(values[i][headers[j].key]));
+					console.log("Coluna Adicionada: " + values[i][headers[j].key])
+				}
+			}
+		}
+		
+		var tabela = document.getElementById("tabela")
+		populateTable(tabela, config);
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+/*
+body {background-color: palegreen;}
+*/
+
+body {background-color: var(--corEmpresa);}
+
+footer {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: aqua;
+}
+
+#caixa{
+  border: solid 1px black;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+#cabecalho{
+  background-color: yellow;
+  border: solid 1px black;
+
+}
+
+#footerCol1{
+  text-align: left;
+}
+
+#footerCol3{
+  text-align: right;
+}

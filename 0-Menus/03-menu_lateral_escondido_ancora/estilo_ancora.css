@@ -1,0 +1,86 @@
+.aside a {
+    position: absolute;
+    left: -90px;
+    transition: 0.2s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 0 15px 15px 0;
+}
+
+
+.aside a:hover {
+    left: 0;
+}
+
+
+#canal {
+    top:20px;
+    background-color: #800;
+}
+
+
+#cursos {
+    top:80px;
+    background-color: #080;
+}
+
+
+#contato {
+    top:140px;
+    background-color: #008;
+}
+
+
+#sobre {
+    top:200px;
+    background-color: aqua;
+}
+
+/* ------------------------- */
+
+.aside2 a {
+    position: absolute;
+    left: -90px;
+    transition: 0.2s;
+    padding: 15px;
+    width: 70px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #fff;
+}
+
+.aside2 a:hover {
+    left: 0;
+}
+
+#canal2 {
+    height: 5px;
+    padding-top: 5px;
+    top:300px;
+    background-color: #800;
+}
+
+#cursos2 {
+    height: 5px;
+    padding-top: 5px;    
+    top:330px;
+    background-color: #080;
+}
+
+#contato2 {
+    height: 5px;
+    padding-top: 5px;    
+    top:360px;
+    background-color: #008;
+}
+
+#sobre2 {
+    height: 5px;
+    padding-top: 5px;    
+    top:390px;
+    background-color: aqua;
+}
+

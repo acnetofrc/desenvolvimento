@@ -1,0 +1,73 @@
+#corpo{
+    margin: 5px;
+}
+
+#logoFatec{
+    top: 0px;
+    opacity: 1.0;
+    filter: alpha(opacity=50);
+}
+
+#logoFatec:hover{
+    opacity: 0.1;
+    filter: alpha(opacity=100);
+}
+
+.menuOpcoes ul li{
+    display: inline;
+}
+
+.menuOpcoes ul li a{
+    display: inline-block;
+    padding: 2px 10px;
+    color: gray;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+.menuOpcoes ul li a:hover{
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+.menuOpcoes ul{
+    font-size: 15px;
+    position: absolute;
+    top:10px;
+    left: 300px;
+    transition: 0.2s;
+    
+}
+
+figure{
+    top:0px;
+
+}
+
+header{
+    border-color: aqua;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.voltarTopo{
+    position: fixed;
+    bottom: 50px;
+    right: 5px;
+
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0,0,0,0.3);
+
+    font-size: 12px;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+.voltarTopo:hover{
+    background-color: rgba(0,0,0,0.6);
+    transition: 0.2s;    
+}
+

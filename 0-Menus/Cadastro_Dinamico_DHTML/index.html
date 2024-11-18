@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+
+<html>
+    <head>
+        <title>Aprendendo Html</title>
+        <meta charset="UTF-8" />
+        <script type="text/javascript" src="./dinamico.js"> </script>
+        <script type="text/javascript" src="./jquery-3.3.1.js"> </script>
+
+    </head>
+
+    <body>
+
+        <section id='DadosPessoais'> 
+
+           <h1>Cadastro Dinâmico - Em Execução</h1>
+
+            <fieldset id="formCadastroPessoas">
+                <legend> Dados Pessoais </legend>
+                <form>
+<!--                     <p>
+                        <label for ="nome"> Nome: </label>
+                        <input type="text" name="nome" id="nome"/>
+                    </p>
+                -->
+
+                    <div>
+                            <label for ="nome"> Nome: </label>
+                            <input type="text" name="nome" id="nome"/>
+                    </div>
+    
+                    <div>
+                        <label for ="sobrenome"> Sobrenome: </label>
+                        <input type="text" name="sobrenome"  id="sobrenome"/>
+                    </div>
+                    <div>
+                        <label for ="cpf"> CPF: </label>
+                        <input type="text" name="cpf"  id="cpf"/>
+                    </div>
+                    <div>
+                        <label for ="telefone"> Telefone: </label>
+                        <input type="text" name="telefone"  id="telefone"/>
+                    </div>
+                    <div>
+                        <label for ="endereco"> Endereço: </label>
+                        <input type="text" name="endereco"  id="endereco"/>
+                    </div>
+
+                    <div>
+                        <br/>
+                        <input type = "button" value="Enviar Dados" onclick="cadastrarPessoas()"/> 
+<!--                         <button type = "submit"> Enviar </button>
+                        <button type = "reset"> Limpar </button>    -->
+                    </div>                            
+                </form>
+            </fieldset>
+
+            <fieldset>
+                <legend> Registros Cadastrados </legend>
+                <table border="1" id="registros">
+                    <tr>
+                        <td>Nome</td>
+                        <td>Sobrenome</td>
+                        <td>CPF</td>                        
+                        <td>Telefone</td>
+                        <td>Endereço</td>                                                
+                    </tr>
+                </table>
+            </fieldset>
+                
+
+        </section> 
+<!--
+<script>
+
+    function cadastrarPessoas(){
+        
+        var p_nome = document.getElementById("nome").value;
+        var p_sobrenome = document.getElementById("sobrenome").value;
+
+        alert(p_nome)
+        alert(p_sobrenome)
+        alert(123)
+
+        var html = "<tr>";
+        html += "<td>" + p_nome + "</td>" + "<td>" + p_sobrenome + "</td>";  
+        html += "</tr>";
+
+        alert(html)
+
+        document.getElementById("registros").innerHTML += html;
+
+        alert("Cadastro Concluído com Sucesso!!!" + ' ' + html);
+
+    }   
+</script>
+-->
+    </body>
+
+</html>

@@ -1,0 +1,15 @@
+.col-md-4{
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+.col-md-5{
+    background-color: crimson;
+    border: 1px solid black;
+}
+
+.col-md-3{
+    background-color: chartreuse;
+    border: 1px solid black;
+}
+

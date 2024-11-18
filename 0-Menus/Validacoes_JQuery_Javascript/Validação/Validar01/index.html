@@ -1,0 +1,118 @@
+<html>
+
+<head>
+    <title>Como Validar um Formulário dinamicamente com jQuery</title>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    
+    <script type="text/javascript">
+/*    
+        $(document).ready(function () {
+            $("input").blur(function () {
+                if ($(this).val() == "") {
+                    $(this).css({ "border": "1px solid #F00", "padding": "2px" });
+                    $(this).focus();
+                }
+            });
+
+            $("input").blur(function () {
+                if ($(this).val() == "" && $("[tag=1]")) {
+                    $(this).css({ "border": "1px solid #F00", "padding": "2px" });
+                    $(this).focus();
+                }
+            });
+*/
+
+/*            
+            $("#botao").click(function () {
+                var cont = 0;
+                $("#form input").each(function () {
+                    if ($(this).val() == "") {
+                        $(this).css({ "border": "1px solid #F00", "padding": "2px" });
+                        cont++;
+                    }
+                });
+                if (cont == 0) {
+                    $("#form").submit();
+                }
+            });
+*/
+
+/*            
+            if (cont == 0) {
+                $("#form").submit();
+            }
+
+
+        });
+*/ 
+
+$(function validar() {
+
+    console.log("Entrei!");
+    $(document).ready(function () {
+        
+        $("input").blur(function () {
+            if ($(this).val() == "") {
+                $(this).css({ "border": "5px solid yellow", "padding": "2px" });
+                $(this).focus();
+            }
+        });
+        $("#botao").click(function () {
+            var cont = 0;
+            $("#form input").each(function () {
+                if ($(this).val() == "") {
+                    $(this).css({ "border": "2px solid green", "padding": "2px" });
+                    cont++;
+                }
+            });
+            if (cont == 0) {
+                $("#form").submit();
+            }
+        });
+
+    });
+
+})
+
+    </script>
+</head>
+
+<body>
+
+    <form id="form" name="form" method="post" onkeypress="validar()">
+
+        <span style="display:inline-table; width:170px;">1-Nome:</span>
+        <input type="text" id="nome" value="" size="60" tag="1">
+        <br /><br />
+
+        <span style="display:inline-table; width:170px;">1-Sobrenome:</span>
+        <input type="text" id="sobrenome" value="" size="60" tag=1/>
+        <br /><br />
+
+        <span style="display:inline-table; width:170px;">1-Email:</span>
+        <input type="text" id="email" value="" size="60" tag=1/>
+        <br /><br />
+
+        <span style="display:inline-table; width:170px;">0-Telefone:</span>
+        <input type="text" id="telefone" value="" size="60" tag=0/>
+        <br /><br />
+
+        <span style="display:inline-table; width:170px;">1-Profissão:</span>
+        <input type="text" id="profissao" value="" size="60" tag=1/>
+        <br /><br />
+
+        <span style="display:inline-table; width:170px;">0-Dt.Nascimento:</span>
+        <input type="text" id="data" value="" size="60" tag=0/>
+        <br /><br />
+
+        <input type="button" id="botao" value="enviar" />
+    </form>
+
+<!--
+    <script src='js/funcoes.js'></script>
+-->
+
+</body>
+
+</html>

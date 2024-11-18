@@ -1,0 +1,98 @@
+.content-box {
+    background-color: cyan;
+    width: 300px;
+    height: 50px;
+    box-sizing: content-box;
+    padding: 25px;
+    border: 5px solid red;
+
+}
+
+.border-box {
+    background-color: grey;
+    width: 300px;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 25px;
+    border: 5px solid red;
+
+}
+
+#pagina1{
+    padding: 5px 10px 15px 20px;
+    border: solid 3px red;
+    margin: 10px 15px 20px 25px;
+    background-color: antiquewhite;
+    width: 50%;
+    display: inline-block;
+    height: 30px;
+
+}
+
+
+#pagina2{
+    padding: 5px 10px 15px 20px;
+    border: solid 3px red;
+    margin: 10px 15px 20px 25px;
+    background-color: antiquewhite;
+    width: 40%;
+    display: inline-block;
+    height: 30px;
+
+}
+
+
+/* 
+trabalhandocom unidades absolutas (px) e relativas (%)
+ajustar texto dentro do box - 
+o box transborda 
+*/
+
+h1{
+    margin: 0;
+    border: solid 3px black;
+    border-bottom: 1px solid tomato;
+    padding: 10px;
+
+    height: 100px;
+    width: 100px;
+
+    box-sizing: border-box;
+   
+}
+
+
+
+table, th, td {
+    border:1px solid black;
+    /* border-collapse: collapse; */
+    border-radius: 5px;
+
+  }
+
+
+table {
+    font-family: arial, sans-serif;
+    /* border-collapse: collapse; */
+    width: 100%;
+    border-radius: 5px;
+
+}
+  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+#borda {
+    height: 20vh;
+    border:3px solid black;
+    /* border-collapse: collapse; */
+    border-radius: 5px;
+
+}

@@ -1,0 +1,16 @@
+#cadastro{
+    margin: 10px;
+}
+
+#coluna2{
+    height: 20vw;
+    background-color: darkorange;
+    border: solid 1px green;
+}
+
+#coluna2a{
+    height: 30vw;
+    background-color: aqua;
+    border: solid 1px red;
+}
+

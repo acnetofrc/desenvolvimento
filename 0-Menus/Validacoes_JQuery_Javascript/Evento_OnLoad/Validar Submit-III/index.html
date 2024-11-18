@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <title>Validar!!</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="estilo.css" />
+       
+    </head>
+
+    <body">
+
+        <header>
+            <nav id="menuEstagio">
+                <ul>
+                    <li><a href="/">Início</a></li>
+                    <li><a href="/estagio/menuEstagio">Voltar</a></li>
+                    <li><a href="/cadastros/alunos" id="frm_cadAlunos">Alunos</a></li>
+                    <li><a href="/cadastros/empresas" id="frm_cadEmpresas">Empresas</a></li>
+                    <li><a href="#">Seguradoras</a></li>
+                    <li><a href="/cadastros/cidades" id="frm_cadCidades">Cidades</a></li>
+                    <li><a href="/estagio/instituicoes">Instituições</a></li>
+                    <li><a href="/estagio/historicos" disabled>Histório Alunos</a></li>
+                    <li><a href="/estagio/centroIntegracao">Centro Integração</a></li>
+
+                </ul>
+            </nav>
+        </header>
+    
+        <div id="">
+            <div id="inputs" height:12px color:yellow>
+                <h4>Mensagem input</h4>
+            </div>
+            <div id="selects" height:10px color:red>
+                <h4>Mensagem select</h4>
+            </div>
+
+
+            <hr>
+            <form id="cadastro" action="" >
+                <p>
+                    <label>Seu nome:</label>
+                    <input type="text" name="nome" class="" ordem="1" tag="1">
+                </p>
+                <p>
+                    <label>Seu email:</label>
+                    <input type="text" name="email" class="" tag="1">
+                </p>
+                <p>
+                    <label>Seu assunto:</label>
+                    <input type="text" name="assunto" id="assunto" maxlength="2" class=""  tag="0">
+                </p>
+                <p>
+                    <label>Seu comentario:</label>
+                    <input type="text" name="comentario" minlength="5" class="" tag="1">
+                </p>
+<!--
+    segunda linha do formulário
+-->
+
+<br>               
+                <div class="form-group col-md-2 col-md-offset-0">
+                    <label for="Marca">Marca</label>
+                    <select class="form-control" id="marca" placeholder="Marca Veículo" tag="0" >
+                        <option>Chevrolet</option>
+                        <option>Fiat</option>
+                        <option>Volkswagen</option>
+                        <option>Ford</option>
+                        <option>Hyundai</option>
+                    </select>
+                </div>
+
+
+<!--
+    terceira linha do formulário
+-->
+<br> <br>                
+                <div class="row">
+                    <div class="form-group col-md-2 col-md-offset-0">
+                <!--                        <label for="Tipo">Tipo..: </label>     -->
+                    <label class="radio-inline">
+                        <input type="radio" name="opttipo" value="nacional" checked>Nacional
+                    </label>                        
+                    <label class="radio-inline">  
+                        <input type="radio" name="opttipo" value="importado" tag="0">Importado
+                    </label>                        
+                    <label class="radio-inline">  
+                        <input type="radio" name="opttipo" value="importado" tag="0">Regional 
+                    </label>                        
+                    <label class="radio-inline">  
+                        <input type="radio" name="opttipo" value="importado" readonly >Municipal
+                    </label>                        
+
+                </div>  
+
+<!--   
+    quarta linha do formulário    
+-->
+<br> <br>                
+                <div class="row">
+                    <div class="form-group col-md-10 col-md-offset-0">
+                        <label for="pneus">Condições Pneus?</label><br/>
+                        <input type="checkbox" name="novos" value="novos"> Novos
+                        <input type="checkbox" name="medios" value="medios" tag="0"> Médios 
+                        <input type="checkbox" name="velhos" value="velhos" readonly > Velhos
+                    </div>                
+                </div> <br>
+
+            </form>
+            
+            
+            <br> <br>
+            <button type="button" onclick="return pegarValor(1)">Habilitar Campos</button>             
+            <button type="button" onclick="return pegarValor(0)">Desabilitar Campos</button>             
+
+
+        </div>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html> 

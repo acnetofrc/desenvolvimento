@@ -1,0 +1,117 @@
+#xxcarouselExampleSlidesOnly{
+    height: 36vh;
+}
+
+#estados {
+    height: 40vh;
+    background-color: gold;
+    border: solid 1px black;
+}
+
+#motos {
+    height: 50vh;
+    background-color:aqua;
+    border: solid 1px black;
+
+}
+
+#animais {
+    height: 60vh;
+    background-color:darkgrey;
+    border: solid 1px black;
+}
+
+#clubes {
+    height: 40vh;
+    background-color:burlywood;
+    border: solid 1px black;
+}
+
+#noticias {
+    height: 50vh;
+    background-color:brown;
+    border: solid 1px black;
+}
+
+#contatos {
+    height: 30vh;
+    background-color:chartreuse;
+    border: solid 1px black;
+}
+
+#irEstados {
+    position: fixed;
+/*    bottom: 400px;    */
+    bottom: 40vw;
+
+    right: 1vh;
+    text-decoration: none;
+    color:white;
+    background-color:aqua;
+    font-size: 12px;
+    padding: 10px;
+}
+
+#irEstados:hover {
+    background-color:bisque;
+    color: black;   
+}
+
+
+#irNoticias {
+    position: fixed;
+/*    bottom: 400px;    */
+    bottom: 38vw;
+
+    right: 1vh;
+    text-decoration: none;
+    color:white;
+    background-color: blue;
+    font-size: 12px;
+    padding: 10px;
+}
+
+#irNoticias:hover {
+    background-color:white;
+    color: black;
+    
+}
+
+#irAnimais {
+    position: fixed;
+/*    bottom: 400px;    */
+    bottom: 36vw;
+
+    right: 1vh;
+    text-decoration: none;
+    color:white;
+    background-color:blueviolet ;
+    font-size: 12px;
+    padding: 10px;
+}
+
+#irAnimais:hover {
+    background-color:white;
+    color: black;   
+}
+
+
+#voltarTopo {
+    position: fixed;
+/*    bottom: 400px;    */
+    bottom: 3vw;
+
+    right: 1vh;
+    text-decoration: none;
+    color:red;
+    background-color: yellow;
+    font-size: 12px;
+    padding: 10px;
+}
+
+#voltarTopo:hover {
+    background-color:white;
+    color: black;
+    
+}
+
